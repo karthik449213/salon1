@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Salon - Premium Unisex Hair Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">Salon</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#stylists">Stylists</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sticky Booking Button -->
+    <button class="sticky-booking" onclick="bookAppointment()">Book Now</button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Salon</h1>
+            <p class="hero-subtitle">Where Beauty Meets Artistry</p>
+            <a href="#services" class="cta-button">Discover Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">Our Premium Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">✂️</div>
+                <h3 class="service-title">Precision Cuts</h3>
+                <p class="service-description">Expert haircuts tailored to your face shape and lifestyle, creating the perfect look that enhances your natural beauty.</p>
+                <div class="service-price">From $85</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3 class="service-title">Color Artistry</h3>
+                <p class="service-description">Transform your look with our advanced coloring techniques, from subtle highlights to bold fashion colors.</p>
+                <div class="service-price">From $120</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💫</div>
+                <h3 class="service-title">Hair Treatments</h3>
+                <p class="service-description">Restore and rejuvenate your hair with our luxury treatment options for ultimate shine and health.</p>
+                <div class="service-price">From $95</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👑</div>
+                <h3 class="service-title">Styling & Events</h3>
+                <p class="service-description">Special occasion styling and updos that make you feel like royalty for your most important moments.</p>
+                <div class="service-price">From $75</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧔</div>
+                <h3 class="service-title">Beard Grooming</h3>
+                <p class="service-description">Professional beard trimming, shaping, and grooming services to keep you looking sharp and sophisticated.</p>
+                <div class="service-price">From $45</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💆</div>
+                <h3 class="service-title">Scalp Wellness</h3>
+                <p class="service-description">Therapeutic scalp treatments and massages that promote healthy hair growth and ultimate relaxation.</p>
+                <div class="service-price">From $65</div>
+            </div>
+        </div>
+
+        <!-- 3D Carousel -->
+        <div class="carousel-container">
+            <canvas id="carousel-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- Stylists Section -->
+    <section id="stylists" class="section">
+        <h2 class="section-title">Meet Our Artists</h2>
+        <div class="stylists-grid">
+            <div class="stylist-card">
+                <div class="stylist-avatar">AJ</div>
+                <h3 class="stylist-name">Aria Johnson</h3>
+                <p class="stylist-specialty">Master Colorist & Creative Director</p>
+            </div>
+            <div class="stylist-card">
+                <div class="stylist-avatar">MR</div>
+                <h3 class="stylist-name">Marco Rodriguez</h3>
+                <p class="stylist-specialty">Precision Cut Specialist</p>
+            </div>
+            <div class="stylist-card">
+                <div class="stylist-avatar">SK</div>
+                <h3 class="stylist-name">Sophia Kim</h3>
+                <p class="stylist-specialty">Texture & Treatment Expert</p>
+            </div>
+            <div class="stylist-card">
+                <div class="stylist-avatar">DT</div>
+                <h3 class="stylist-name">David Thompson</h3>
+                <p class="stylist-specialty">Men's Grooming Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Absolutely transformed my look! The team at Luxe Salon is incredibly talented and professional. I've never felt more confident."</p>
+                <div class="client-info">
+                    <div class="client-avatar">ES</div>
+                    <div class="client-name">Emma Stone</div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The attention to detail is unmatched. Every visit feels like a luxury experience. My hair has never looked better!"</p>
+                <div class="client-info">
+                    <div class="client-avatar">JD</div>
+                    <div class="client-name">James Davis</div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"From the moment you walk in, you know you're in for something special. The ambiance and service are absolutely incredible."</p>
+                <div class="client-info">
+                    <div class="client-avatar">ML</div>
+                    <div class="client-name">Maria Lopez</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="service">Preferred Service</label>
+                <input type="text" id="service" name="service">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
